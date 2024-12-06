@@ -1,0 +1,66 @@
+/**index.wxss**/
+page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(#00aaee,#ddd);
+}
+/* 内容区域 */
+.content {
+  flex: 1;
+}
+.content-box {
+  height: 100%;
+}
+.main{
+  display: flex;
+  height: 100%;
+}
+.main-content{
+  padding: 20rpx 5rpx 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.box{
+  width: 200rpx;
+  margin: 10rpx 25rpx;  
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  /* margin: 0 80rpx 30rpx 0; */
+}
+.box image{
+  border-radius: 7%;
+  height: 260rpx;
+  display: block;
+}
+.box text{
+  padding-left: 3px;
+}
+.box .box-item{
+  width: 100%;
+}
+.main-content ~ text{
+  height: 40px;
+  display: block;
+}
+/* 底部区域 */
+.tab{
+  width: 100%;
+  display: flex;
+}
+.tab-item{
+  flex: 1;
+  color: #b97;
+  background-color: #ace;
+  font-size: 10pt;
+  text-align: center;
+  padding: 15rpx 0;
+}
+.tab-item text{
+  font-size: 25pt;
+}
+.tab-item.active{
+  color: #0077aa;
+}
+

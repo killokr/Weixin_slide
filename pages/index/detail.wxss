@@ -1,0 +1,100 @@
+page{
+  background: #999;
+}
+/* 顶部区域 */
+.top #back{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 85rpx;
+  font-weight: bold;
+}
+/* 头部 */
+.header{
+  margin: 40rpx;
+  display: flex;
+  justify-content: center;
+}
+.header image{
+  width: 200rpx;
+  height: 300rpx;
+  border-radius: 7%;
+}
+.header .header-content{
+  display: inline-block;
+  width: cala(100% - 200rpx);
+  flex: 1;
+}
+.header .header-content > view{
+  padding-left: 40rpx;
+}
+.header #header-title{
+  font-size: 50rpx;
+  font-weight: bold;
+}
+.header #header-desc{
+  font-size: 30rpx;
+  overflow: hidden;
+  color: #667;
+}
+.header .star{
+  white-space: nowrap;
+}
+/* 内容 */
+/* 简介 */
+.main{
+  padding-left: 30rpx;
+  padding-right: 20rpx;
+}
+.main view:first-child{
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+/* 影人 */
+#title2{
+  margin: 30rpx 0;
+}
+.actors{
+  display: flex;
+  /* overflow-x: scroll; */
+  /* 换scroll-view加套view，滚动无滚动条 */
+}
+.actors .actor{
+  flex: 1;
+  margin: 0 15rpx;
+}
+.actors .actor view{
+  font-weight: 500;
+}
+.actors .actor image{
+  width: 200rpx;
+  height: 300rpx;
+}
+/* 评论 */
+.comments{
+  margin: 30rpx 30rpx;
+  background-color: #ccc;
+  padding: 0 30rpx;
+}
+.comments #title3{
+  font-weight: bold;
+  padding-top: 25rpx;
+}
+.comments .comment{
+  margin: 25rpx 0;
+  padding-bottom: 20rpx;
+  border-bottom: 1px solid #eee;
+}
+.comments .comment:last-child{
+  margin-bottom: 20rpx;
+  border: none;
+}
+.comments .comment .uname{
+  margin-right: 20rpx;
+}
+.comments .comment .ptime{
+  color: #bbb;
+}
+.comments .comment .ucontent{
+  margin-top: 20rpx;
+}

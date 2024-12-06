@@ -1,0 +1,65 @@
+<!-- 顶部标题 -->
+<view class="top">
+  <view class="top-title active">{{name}}</view>
+  <view id="back" bindtap="back">{{"<"}}</view>
+</view>
+<!-- 页面 -->
+
+<scroll-view scroll-y>
+  <view>
+    <view class="header">
+      <image src="{{img}}"></image>
+      <view class="header-content">
+        <view id="header-title">{{name}} ({{year}})</view>
+        <view id="header-desc" style="display:{{flag?'none':'block'}};">{{label}} / {{area}} / {{time}}</view>
+        <view id="header-desc" style="display:{{flag?'block':'none'}};">{{author}} / {{publisher}} / 出版时间：{{year}}</view>
+        <view class="score">
+          <view>
+            <image src="../images/灰星.png"></image>
+            <image src="../images/灰星.png"></image>
+            <image src="../images/灰星.png"></image>
+            <image src="../images/灰星.png"></image>
+            <image src="../images/灰星.png"></image>
+          </view>
+          <view class="star" style="width:{{score/2*12.3}}px">
+            <image src="../images/黄星.png"></image>
+            <image src="../images/黄星.png"></image>
+            <image src="../images/黄星.png"></image>
+            <image src="../images/黄星.png"></image>
+            <image src="../images/黄星.png"></image>
+          </view>
+        <view style="display: inline-block;font-size: 30rpx;line-height: 50rpx;">{{score}}</view>
+      </view>
+      </view>
+    </view>
+    <view class="main">
+      <view>简介</view>
+      <view>
+        {{desc}}
+      </view>
+      <view id="title2" style="display:{{flag?'none' :'block'}};">影人</view>
+      <scroll-view scroll-x  style="display:{{flag?'none' :'block'}};">
+        <view class="actors">
+          <view class="actor">
+            <image src="{{director.picture_url}}"></image>
+            <view>{{director.name}}</view>
+            <view>导演</view>
+          </view>
+          <view wx:for="{{actors}}" class="actor">
+            <image src="{{item.picture_url}}"></image>
+            <view>{{item.name}}</view>
+            <view>演员</view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+    <view class="comments">
+      <view id="title3">短评</view>
+      <view wx:for="{{comments}}" class="comment">
+        <text class="uname">{{item.user}}</text>
+        <text class="ptime">{{item.time}}</text>
+        <view class="ucontent">{{item.content}}</view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

@@ -1,0 +1,55 @@
+/* 评分 */
+.score{
+  position: relative;
+  display: flex;
+}
+.score image{
+  width: 32rpx !important;
+  height: 32rpx !important;
+  display: inline-block !important;
+}
+.score .star{
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+}
+
+/* 顶部区域 */
+.top{
+  height: 150rpx;
+  background-color: #0077aa;
+  text-align: center;
+  position: relative;
+  color: #fff;
+  box-shadow: 0 5rpx 10rpx #0077aa;
+}
+.top-title{
+  display: none;
+  line-height: 170rpx;
+}
+.top-title.active{
+  display: inline-block;
+}
+/* iconfont */
+@font-face {
+  font-family: "iconfont"; /* Project id 4376863 */
+  src: url('/pages/fonts/iconfont.woff2?t=1702860072543') format('woff2'),
+       url('/pages/fonts/iconfont.woff?t=1702860072543') format('woff'),
+       url('/pages/fonts/iconfont.ttf?t=1702860072543') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shu:before {
+  content: "\e60c";
+}
+
+.icon-dianying:before {
+  content: "\e62e";
+}

@@ -1,0 +1,23 @@
+{
+  "id": "4376863",
+  "name": "罗-微二期末",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2571142",
+      "name": "书",
+      "font_class": "shu",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "8371997",
+      "name": "电影",
+      "font_class": "dianying",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    }
+  ]
+}

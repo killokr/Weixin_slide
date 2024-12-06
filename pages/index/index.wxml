@@ -1,0 +1,28 @@
+<!-- 顶部标题 -->
+<view class="top">
+  <view data-index="0" class="top-title {{tab == 0 ? 'active' : ''}}">电影</view>
+  <view data-index="1" class="top-title {{tab == 1 ? 'active' : ''}}">图书</view>
+</view>
+
+<!-- 内容区域 -->
+<view class="content">
+  <swiper current="{{tab}}" class="content-box">
+    <swiper-item>
+      <include src="movies.wxml"></include>
+    </swiper-item>
+    <swiper-item>
+      <include src="books.wxml"></include>
+    </swiper-item>
+  </swiper>
+</view>
+<!-- 底部标题 -->
+<view class="tab">
+  <view bindtap="changeItem" data-index="0" class="tab-item {{tab == 0 ? 'active' : ''}}">
+    <text class="iconfont icon-dianying"></text>
+    <view>电影</view>
+  </view>
+  <view bindtap="changeItem" data-index="1" class="tab-item {{tab == 1 ? 'active' : ''}}">
+    <text class="iconfont icon-shu"></text>
+    <view>图书</view>
+  </view>
+</view>
